@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+html,
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary : hsl(0,0%,18%);
+  --secondary:#a8a8a8;
+}
+
+span{
+  font-size: 1.25rem;
+}
+h1{
+  @apply 
+    text-[2rem]
+    font-semibold
+    
+    text-[color:var(--primary)]
+}
+input,textarea{
+  @apply 
+    border-2
+    border-[color:var(--secondary)]
+    rounded-md
+    w-full
+    h-[3rem]
+    px-1
+}
+
+nav{		
+  @apply 
+    bg-[color:var(--primary)] 
+    text-white 
+    flex-grow 
+    gap-5 
+    rounded-se-[4rem] 
+    flex 
+    flex-col 
+    items-center 
+    pt-20 
+}
+
+label{
+  @apply text-[color:var(--primary)] font-medium
+}
+
+.btn-primary{
+  @apply bg-[color:var(--primary)] text-white px-4 py-2 rounded-lg max-w-fit
+}
