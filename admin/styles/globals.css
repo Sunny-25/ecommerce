@@ -53,5 +53,34 @@ label{
 }
 
 .btn-primary{
-  @apply bg-[color:var(--primary)] text-white px-4 py-2 rounded-lg max-w-fit
+  @apply bg-[color:var(--primary)] text-white px-4 py-2 rounded-lg max-w-fit flex justify-center items-center
+}
+/* TABLE */
+/* table.basic{
+  @apply w-full table table-fixed 
+} */
+
+table.basic tr td{
+  @apply border p-2
+}
+
+table.basic thead tr td{
+  @apply bg-[color:var(--primary)] text-white
+}
+
+table.basic tbody {
+  @apply block max-h-[60vh] overflow-y-auto 
+}
+table.basic tbody::-webkit-scrollbar{
+  display: none; 
+}
+
+table.basic thead, table.basic tbody tr {
+@apply table w-full table-fixed
+}
+
+table.basic a {
+  @apply bg-[color:var(--primary)] 
+  text-white 
+  text-lg py-1 px-2 rounded-md inline-flex gap-1
 }
